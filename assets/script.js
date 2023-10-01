@@ -1,13 +1,16 @@
 var apiKey = "cdce0ff6cdae7cd27b86010906e35a95";
-var city;
-var queryURL = "http://api.openweathermap.org/data/2.5/weather";
-var cityInput = $("#cityName");
-var Button = $("#srchBtn");
-var Current = $("#crntWea");
-var Recent = $("#rcntSearch");
-var upComing = $("#5Day")
+var requestURL = api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={"cdce0ff6cdae7cd27b86010906e35a95"}
 
-$(".Button").on("click", function(){
-var city = $(this).siblings(".srcLoc").val();
-console.log(srchLoc);
-})
+
+function SearchFormSubmit(event) {
+    event.PreventDefault();
+
+var searchFormEl = document.querySelector('#cityName').value;
+if (!cityName){
+console.error("city not found");
+return;
+}
+
+var queryString = //'./search-results.html?q=' + searchInputVal + '&format=' + formatInputVal;
+
+}

@@ -18,16 +18,16 @@
     <main class="container row col-12">
 
         <div class="row col-12 topRow">
-            <div id="leftSide" class="col-4 p-3 mb-2 bg-light text-dark">
+            <div id="leftSide" class="container col-4 p-3 mb-2 bg-light text-dark">
                 <div class="col-12 position-relative top-0 start-5">What's the weather like in...</div>
-                <div class="col-8 position-relative top-20 start-5">
+                <div class="col-12 position-relative top-20 start-5">
                     <input type="text" id="cityName" class="form-control">
                     <button id="srchBtn" class="col-6 position-relative start-5 bottom-0 button">Go!</button>
                 </div>
             </div>
 
             <div id="rightSide" class="col-8">
-                <div id="crntWea" class="col-12 currentWeather">placeholder text</div>
+                <div id="crntWea" class="col-12 currentWeather"><table class="card-body table"><th class="my-4">Place Holder</th></table></div>
             </div>
         </div>
         
@@ -36,11 +36,14 @@
                 <div class="col-12 rcntSearch">Local Storage Goes here</div>
             </div>
 
-            <div id="rightSide" class="col-8">
-                <div id="subhead" class="col-12">5-Day Forecast</div>
-                <div id="5Day" class="col-12 forecast">
-                    <div id="day1" class="col-2">one</div> <div id="day2" class="col-2">two</div> <div id="day3" class="col-2">three</div> <div id="day4" class="col-2">four</div> <div id="day5" class="col-2">five</div>
-                </div>
+            <div id="rightSide" class="col-8 container">
+                <table id="5Day"class="col-12 class forecast"><th>5 Day forecast</th>
+                    <tbody id="1" class="card-body">test</tbody>
+                    <tbody id="2" class="card-body">test</tbody>
+                    <tbody id="3" class="card-body">test</tbody>
+                    <tbody id="4" class="card-body">test</tbody>
+                    <tbody id="5" class="card-body">test</tbody>
+                </table>    
             </div>
         </div>
         
