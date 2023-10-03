@@ -76,7 +76,7 @@ function getCurrentWeather(lat, lon) {
                 crntWindSpeedEl.textContent = "Wind Speed: " + data.wind.speed + " mph"
                 crntHumidityEl.textContent = "Humidity: " + data.main.humidity + "%"
             })
-    }
+    }}
 
     function getFiveDayForecast(lat, lon) {
 
@@ -98,4 +98,3 @@ function getCurrentWeather(lat, lon) {
     }
  localStorage.setItem 
     srchBtn.addEventListener('click', searchFormSubmit);
-
