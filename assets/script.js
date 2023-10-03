@@ -29,7 +29,7 @@ function searchFormSubmit(event) {
 //api pull framework.
 
 function getLatAndLong(cityName) {
-    var geoCodeURL = "http://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "&limit=1&appid=" + API_KEY;
+    var geoCodeURL = "https://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "&limit=1&appid=" + API_KEY;
 
     fetch(geoCodeURL)
         .then(function (res) {
